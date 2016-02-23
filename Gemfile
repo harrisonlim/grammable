@@ -35,6 +35,11 @@ end
 # Use Rails 12factor to speed page loads and troubleshoot Heroku logs
 gem 'rails_12factor', group: :production
 
+# Use Rspec for automated testing
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
