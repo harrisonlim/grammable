@@ -1,6 +1,9 @@
 class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
+  def show
+  end
+
   def new
     @gram = Gram.new
   end
